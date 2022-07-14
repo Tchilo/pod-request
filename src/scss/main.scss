@@ -1,17 +1,227 @@
 @use 'reset' as *;
 @use 'breakpoints' as *;
 @use 'colors' as *;
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;900&display=swap');
 
 
-$red: red;
-$white: white;
+
 body {
-  background: $red;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-family: Chivo, sans-serif;
+  background-color: $dark;
+  font-weight: 400;
+  // background:no-repeat url(../assets/mobile/image-host.jpg) $dark;
+  // background: linear-gradient(rgba(18, 23, 37, 0.8) 100%, rgba(18, 23, 37, 0.8)100%), url(../assets/mobile/image-host.jpg);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  
+
+
+  @include md {
+    background:no-repeat url(../assets/tablet/image-host.jpg),$dark;
+    background-position: right;
+    display: grid;
+    background-position-x: right;
+    grid-template-rows: 28% 1fr;
+    background-position-y: 0;
+  }
+
+  @include xl {
+    background: no-repeat url(../assets/desktop/image-host.jpg), $dark;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: 60%;
+
+  }
+
 }
 
-h1 {
-  color: $white;
+header {
+  // background-color: $dark;
+
+  nav {
+    display: flex;
+    justify-content: center;
+    margin: 62px auto;
+  }
+
+  @include md {
+    grid-row: span 1/2;
+    justify-self: left;
+    background-color: $dark;
+
+
+    nav {
+      padding: 50px 0 0 39px;
+      margin: 0;
+
+    }
+  }
+
+  @include xl {
+    nav {
+      padding: 50px 0 0 169px;
+
+    }
+  }
+}
+
+main {
+  padding: 0 24px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    text-align: center;
+
+    h1 {
+      width: 103%;
+      font-size: 27px;
+      color: #fff;
+      line-height: 38px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+
+      & span {
+        color: $accent;
+      }
+    }
+
+    p {
+      color: $semi-white;
+      font-size: 15px;
+      line-height: 25px;
+      margin-bottom: 33px;
+    }
+  }
+
+  .icons {
+    margin-bottom: 48px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    .message {
+      color: $accent;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .error {
+      color: rgb(230, 104, 104);
+      text-align: center;
+      margin-bottom: 10px;
+
+    }
+    input {
+      background-color: $secondary;
+      height: 46px;
+      border-radius: 28px;
+      color: #fff;
+      padding: 9px 109px 9px 32px;
+      border: none;
+      margin-bottom: 16px;
+
+      &:focus {
+        border-color: purple;
+      }
+    }
+
+    button {
+      border-radius: 28px;
+      height: 46px;
+      border: none;
+      padding: 9px 109px;
+      background: $accent;
+    }
+  }
+
+  @include md {
+    background-color: $dark;
+    margin: 0px 100px 0px 47px;
+    padding: 100px 0;
+
+    .container {
+      align-items: flex-start;
+    }
+
+    .hero {
+      text-align: left;
+
+      & h1 {
+        font-size: 48px;
+        line-height: 56px;
+        max-width: 600px;
+
+      }
+
+      & p {
+        font-size: 18px;
+        margin: 40px 0 41px;
+        max-width: 451px;
+      }
+    }
+
+    .icons {
+      order: 1;
+      margin-top: 64px;
+    }
+
+    form {
+
+      input {
+        width: 100%;
+        font-weight: 900;
+      }
+      button {
+        position: relative;
+        top: -71px;
+        width: 50%;
+        align-items: center;
+        padding: 0;
+        left: 295px;
+        font-weight: 900;
+      }
+    }
+
+ 
+  }
+
+  @include xl {
+    margin: 0px 689px 0px 169px;
+
+    .hero {
+      h1 {
+        font-size: 52px;
+        max-width: 665px;
+      }
+    }
+  }
+}
+
+footer {
+  @include md {
+  background: no-repeat url(../assets/desktop/bg-pattern-dots.svg);
+  background-position-x: 30px;
+  height: 104px;
+  }
+
+  @include xl {
+    background-position-x: right;
+    position: relative;
+    top: -180px;
+  }
 }
