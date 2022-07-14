@@ -129,6 +129,16 @@ main form {
   display: flex;
   flex-direction: column;
 }
+main form .message {
+  color: #54E6AF;
+  text-align: center;
+  margin-bottom: 10px;
+}
+main form .error {
+  color: rgb(230, 104, 104);
+  text-align: center;
+  margin-bottom: 10px;
+}
 main form input {
   background-color: #2C344B;
   height: 46px;
