@@ -1,10 +1,24 @@
-# Sass-parcel template
-> Template to help make it easy to start a project with Sass and parcel enabled with quick auto-refresh.
+# equalizer-landing-page
+> This is  a project to build the pod-request-access-landing-page.
 
 ## Built with
 - HTML
 - Sass
 - Parcel
+- JS
+
+## See Live 
+[click here!](https://meet-app-home-page.netlify.app/)
+
+## Screenshots
+> | Phone | Tablet |
+> |--------------|----------------|
+> |<img height="500" src="./src/assets/mobile.png">|<img height="500" src="./src/assets/tablet.png">|
+
+>|Desktop|
+>|-------|
+>|<img height="500" src="./src/assets/desktop.png">|
+
 
 ## Getting Started
 
@@ -14,11 +28,11 @@
 2. Navigate to your desired location to download the contents of this repository.
 3. Run  
 ```
-git clone https://github.com/tchilo/sass-parcel-template
+git clone git@github.com:Tchilo/pod-request.git
 ```
 4. Run
   ```
-  cd sass-parcel-template
+  cd pod-request
   ```
 5. Run 
 ```
@@ -28,24 +42,12 @@ npm install` or `npm i
 ```
 npm run dev
 ``` 
-7. start building!
 
-8. The http://localhost:1234/ server will automatically open in your browser, if it doesn't hold down the ctrl key then click the link in your terminal to open it in your browser. happy coding!! 🌈
+7. The http://localhost:1234/ server will automatically open in your browser, if it doesn't hold down the ctrl key then click the link in your terminal to open it in your browser. happy coding!! 
 
-## Take note:
-> When you are in development/building mode you can use 
-```
-npm run dev
-```
->npm run dev is going to watch your server and any changes that will happen while build will not, this one is also faster.
 
->When you are ready to push to production ready to put it online you will run:
-
-```
-npm run build
-```
 >The npm run build will optimize your site and it is slow to run but what it puts out is very optimized
-## Authors:
+## Author:
   
  👤 **Taro Chilongoshi**
 
@@ -58,22 +60,10 @@ npm run build
 
 Contributions, issues and feature requests are welcome!
 
-
-Feel free to check the [issues page](https://github.com/nikoescobal/sass-parcel-template/issues).
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgements
-
- 👤 **Nikolas Escobal**
-
-[<code><img height="26" src="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png"></code>](https://github.com/nikoescobal)
- 
-
-  👤 **Kevin Powell**
-  
-  [click here to watch video](https://www.youtube.com/watch?v=wYWf2m_yzBQ&t=21s)
 
 ## 📝 MIT License
 

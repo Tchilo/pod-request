@@ -9,6 +9,12 @@ body {
   font-family: Chivo, sans-serif;
   background-color: $dark;
   font-weight: 400;
+  // background:no-repeat url(../assets/mobile/image-host.jpg) $dark;
+  // background: linear-gradient(rgba(18, 23, 37, 0.8) 100%, rgba(18, 23, 37, 0.8)100%), url(../assets/mobile/image-host.jpg);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  
+
 
   @include md {
     background:no-repeat url(../assets/tablet/image-host.jpg),$dark;
@@ -30,6 +36,8 @@ body {
 }
 
 header {
+  // background-color: $dark;
+
   nav {
     display: flex;
     justify-content: center;
