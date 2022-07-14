@@ -1,4 +1,4 @@
-# equalizer-landing-page
+# pod-request-access-landing-page
 > This is  a project to build the pod-request-access-landing-page.
 
 ## Built with
