@@ -48,13 +48,20 @@ body {
 }
 @media (min-width: 768px) {
   body {
-    background: no-repeat url(/image-host.a035cb48.jpg), no-repeat url(/bg-pattern-dots.3d5293f0.svg) bottom/0%;
+    background: no-repeat url(/image-host.a035cb48.jpg), #121725;
     background-position: right;
     display: grid;
     background-position-x: right;
-    background-color: #121725;
     grid-template-rows: 28% 1fr;
     background-position-y: 0;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    background: no-repeat url(/image-host.43d2a2de.jpg), #121725;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: 60%;
   }
 }
 
@@ -72,6 +79,11 @@ header nav {
   header nav {
     padding: 50px 0 0 39px;
     margin: 0;
+  }
+}
+@media (min-width: 1440px) {
+  header nav {
+    padding: 50px 0 0 169px;
   }
 }
 
@@ -151,25 +163,38 @@ main form button {
   main .hero h1 {
     font-size: 48px;
     line-height: 56px;
+    max-width: 600px;
   }
   main .hero p {
     font-size: 18px;
     margin: 40px 0 41px;
+    max-width: 451px;
   }
   main .icons {
     order: 1;
     margin-top: 64px;
   }
   main form input {
-    width: 427px;
+    width: 100%;
+    font-weight: 900;
   }
   main form button {
     position: relative;
     top: -71px;
-    width: 39%;
+    width: 50%;
     align-items: center;
     padding: 0;
-    left: 337px;
+    left: 295px;
+    font-weight: 900;
+  }
+}
+@media (min-width: 1440px) {
+  main {
+    margin: 0px 689px 0px 169px;
+  }
+  main .hero h1 {
+    font-size: 52px;
+    max-width: 665px;
   }
 }
 
@@ -178,6 +203,13 @@ main form button {
     background: no-repeat url(/bg-pattern-dots.3d5293f0.svg);
     background-position-x: 30px;
     height: 104px;
+  }
+}
+@media (min-width: 1440px) {
+  footer {
+    background-position-x: right;
+    position: relative;
+    top: -180px;
   }
 }
 
